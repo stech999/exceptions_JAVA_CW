@@ -92,8 +92,8 @@ public class DataRequest {
         try (FileWriter fw = new FileWriter(file, true)) {
             fw.write("<" + firstName + "> " + "<" + lastName + "> " + "<" + middleName + "> " + "<" + yearOfBirth + "> " + "<" + numberPhone + "> " + "<" + gender + ">\n");
             System.out.println("Файл успешно сохранен!");
+            fw.close();
         }catch (IOException e) {
-//            e.printStackTrace();
             System.out.println("Что то пошло не так!");
         }
     }
